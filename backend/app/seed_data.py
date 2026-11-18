@@ -264,8 +264,10 @@ If you are the copyright holder or an authorized agent and believe a work violat
     db.session.commit()
 
     # 5. Seed Real Public Domain Books with Generated PDF Files & Vector Covers
-    upload_books_dir = Path("uploads/books")
-    upload_covers_dir = Path("uploads/covers")
+    from flask import current_app
+    upload_root = Path(current_app.config['UPLOAD_FOLDER'])
+    upload_books_dir = upload_root / "books"
+    upload_covers_dir = upload_root / "covers"
     upload_books_dir.mkdir(parents=True, exist_ok=True)
     upload_covers_dir.mkdir(parents=True, exist_ok=True)
 
