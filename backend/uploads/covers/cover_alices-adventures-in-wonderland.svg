@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E1B4B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#312E81;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#grad)" rx="8" />
+  
+  <!-- Subtle Spine Line -->
+  <line x1="28" y1="0" x2="28" y2="600" stroke="rgba(255,255,255,0.15)" stroke-width="2" />
+  <line x1="32" y1="0" x2="32" y2="600" stroke="rgba(0,0,0,0.2)" stroke-width="1.5" />
+  
+  <!-- Decorative Frame -->
+  <rect x="50" y="45" width="310" height="510" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" rx="4" />
+  <rect x="56" y="51" width="298" height="498" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1" rx="2" />
+  
+  <!-- Category Badge -->
+  <rect x="70" y="70" width="160" height="24" rx="12" fill="rgba(255,255,255,0.18)" />
+  <text x="150" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">ADVENTURE & WONDER</text>
+  
+  <!-- Title -->
+  <foreignObject x="70" y="140" width="270" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: #ffffff; font-family: 'Georgia', serif; font-size: 26px; font-weight: bold; line-height: 1.25; text-shadow: 0 2px 4px rgba(0,0,0,0.4);">
+      Alice’s Adventures in Wonderland
+    </div>
+  </foreignObject>
+  
+  <!-- Divider -->
+  <line x1="70" y1="380" x2="160" y2="380" stroke="#F59E0B" stroke-width="3" />
+  
+  <!-- Author -->
+  <text x="70" y="420" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#F1F5F9" letter-spacing="0.5">Lewis Carroll</text>
+  
+  <!-- Footer Badge -->
+  <text x="70" y="525" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="rgba(255,255,255,0.6)" letter-spacing="1">PUBLIC DOMAIN EDITION</text>
+  <circle cx="330" cy="520" r="14" fill="rgba(255,255,255,0.15)"/>
+  <text x="330" y="524" font-family="'Georgia', serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">e</text>
+</svg>
